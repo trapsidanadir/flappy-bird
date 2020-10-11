@@ -32,10 +32,12 @@ def draw_window(win,birds, pipes, floor, score, alive=True, stats = False):
         alive = STAT_FONT.render('Alive: '+str(len(birds)),True,(255,255,255))
         win.blit(alive, (5, (gen.get_height()+30+10)))
 
-    text = STAT_FONT.render('Score:' + str(score), True,(255,255,255))
-    win.blit(text, (WIDTH - (10 + text.get_width()), 30))
+        text = STAT_FONT.render('Score:' + str(score), True,(255,255,255))
+        win.blit(text, (WIDTH - (10 + text.get_width()), 30))
     
-    
+    else:
+        text = STAT_FONT.render(str(score), True,(255,255,255))
+        win.blit(text, (WIDTH//2 , 30))
             
     pygame.display.update()
 
