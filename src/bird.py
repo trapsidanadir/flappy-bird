@@ -4,7 +4,7 @@ from src.params import *
 class Bird():
 
     IMAGES = BIRD_IMAGES
-    MAX_ROTATION = 8
+    MAX_ROTATION = 3
     ROT_VEL = 20
     ANIMATION_TIME = 10
 
